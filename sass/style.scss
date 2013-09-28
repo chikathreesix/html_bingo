@@ -1,0 +1,152 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/user-interface";
+
+body{
+  @include background-image(linear-gradient(#dd0000, #880000));
+  background-repeat: no-repeat;
+  @include background-size(cover);
+  @include box-align(center);
+}
+
+
+#header{
+  width: 560px;
+  height: 80px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  h1{
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    padding: 20px;
+    font-family: Times New Roman, serif;
+    font-style: oblique;
+  }
+}
+
+.btn_reset{
+  color: #000;
+  @include background-image(linear-gradient(#ccc, #999));
+  @include border-radius(5px);
+  margin-top: 20px;
+  border: 1px solid #666;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  width: 40px;
+}
+
+.container{
+  width: 560px;
+  margin: 0 auto;
+  //@include display-box;
+
+  .roulette_area{
+    .roulette{
+      @include legacy-pie-clearfix;
+      li{
+        position: relative;
+        float: left;
+        width: 178px;
+        height: 180px;
+        margin-left: 10px;
+        border: 1px solid #666;
+        overflow: hidden;
+        @include background-image(linear-gradient(#666, #000));
+        @include border-radius(5px);
+
+
+        &:first-child{
+          margin-left: 0px;
+        }
+  
+        .wrapper{
+          position: absolute;
+          top: 0;
+          left: 0;
+          div{
+            position: absolute;
+            color: #ddd;
+            width: 180px;
+            text-align: center;
+            font-size: 100px;
+            padding: 40px 0;
+            line-height: 100%;
+            @include single-text-shadow(-1px, -1px, 1px, false, #000);
+          }
+        }
+      }
+    }
+    
+    .btn_start{
+      width: 100%;
+      padding: 16px;
+      text-align: center;
+      font-size: 24px;
+      color: #533b01;
+      margin-top: 20px;
+      border: 1px solid #6c4c00;
+      cursor: pointer;
+      @include background-image(linear-gradient(#ffb400, #9e7000));
+      @include border-radius(5px);
+      @include box-sizing(border-box);
+      @include user-select(none);
+
+      &:hover{
+        @include background-image(linear-gradient(#ffca4c, #b47f00));
+      }
+    }
+  }
+
+  
+  .board_area{
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+
+    ul{
+      li{
+        @include legacy-pie-clearfix;
+
+        &:first-child{
+          p{
+            border-top: 1px solid #666;
+          }
+        }
+
+        p{
+          float: left;
+          width: 35px;
+          padding: 5px 0;
+          text-align: center;
+          @include background-image(linear-gradient(#ccc, #999));
+          @include box-sizing(border-box);
+          border-right: 1px solid #666;
+          border-bottom: 1px solid #666;
+          font-size: 18px;
+
+          &:first-child{
+            border-left: 1px solid #666;
+          }
+        }
+
+        .head{
+          @include background-image(linear-gradient(#666, #000));
+          color: #ccc;
+        }
+
+        .selected{
+          @include background-image(linear-gradient(#ffb400, #9e7000));
+        }
+      }
+    }
+  }
+}

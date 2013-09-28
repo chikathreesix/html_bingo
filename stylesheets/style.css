@@ -1,0 +1,281 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../sass/style.scss */
+body {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd0000), color-stop(100%, #880000));
+  background-image: -webkit-linear-gradient(#dd0000, #880000);
+  background-image: -moz-linear-gradient(#dd0000, #880000);
+  background-image: -o-linear-gradient(#dd0000, #880000);
+  background-image: linear-gradient(#dd0000, #880000);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+}
+
+/* line 19, ../sass/style.scss */
+#header {
+  width: 560px;
+  height: 80px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* line 25, ../sass/style.scss */
+#header h1 {
+  text-align: center;
+  color: #333;
+  font-size: 32px;
+  padding: 20px;
+  font-family: Times New Roman, serif;
+  font-style: oblique;
+}
+
+/* line 35, ../sass/style.scss */
+.btn_reset {
+  color: #000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#cccccc, #999999);
+  background-image: -moz-linear-gradient(#cccccc, #999999);
+  background-image: -o-linear-gradient(#cccccc, #999999);
+  background-image: linear-gradient(#cccccc, #999999);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 1px solid #666;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  width: 40px;
+}
+
+/* line 47, ../sass/style.scss */
+.container {
+  width: 560px;
+  margin: 0 auto;
+}
+/* line 53, ../sass/style.scss */
+.container .roulette_area .roulette {
+  *zoom: 1;
+}
+/* line 22, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container .roulette_area .roulette:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 55, ../sass/style.scss */
+.container .roulette_area .roulette li {
+  position: relative;
+  float: left;
+  width: 178px;
+  height: 180px;
+  margin-left: 10px;
+  border: 1px solid #666;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(#666666, #000000);
+  background-image: -moz-linear-gradient(#666666, #000000);
+  background-image: -o-linear-gradient(#666666, #000000);
+  background-image: linear-gradient(#666666, #000000);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 67, ../sass/style.scss */
+.container .roulette_area .roulette li:first-child {
+  margin-left: 0px;
+}
+/* line 71, ../sass/style.scss */
+.container .roulette_area .roulette li .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 75, ../sass/style.scss */
+.container .roulette_area .roulette li .wrapper div {
+  position: absolute;
+  color: #ddd;
+  width: 180px;
+  text-align: center;
+  font-size: 100px;
+  padding: 40px 0;
+  line-height: 100%;
+  text-shadow: -1px -1px 1px black;
+}
+/* line 89, ../sass/style.scss */
+.container .roulette_area .btn_start {
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+  color: #533b01;
+  margin-top: 20px;
+  border: 1px solid #6c4c00;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb400), color-stop(100%, #9e7000));
+  background-image: -webkit-linear-gradient(#ffb400, #9e7000);
+  background-image: -moz-linear-gradient(#ffb400, #9e7000);
+  background-image: -o-linear-gradient(#ffb400, #9e7000);
+  background-image: linear-gradient(#ffb400, #9e7000);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+/* line 103, ../sass/style.scss */
+.container .roulette_area .btn_start:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffca4c), color-stop(100%, #b47f00));
+  background-image: -webkit-linear-gradient(#ffca4c, #b47f00);
+  background-image: -moz-linear-gradient(#ffca4c, #b47f00);
+  background-image: -o-linear-gradient(#ffca4c, #b47f00);
+  background-image: linear-gradient(#ffca4c, #b47f00);
+}
+/* line 110, ../sass/style.scss */
+.container .board_area {
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+}
+/* line 116, ../sass/style.scss */
+.container .board_area ul li {
+  *zoom: 1;
+}
+/* line 22, ../../../../../../../opt/local/lib/ruby1.9/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container .board_area ul li:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+/* line 120, ../sass/style.scss */
+.container .board_area ul li:first-child p {
+  border-top: 1px solid #666;
+}
+/* line 125, ../sass/style.scss */
+.container .board_area ul li p {
+  float: left;
+  width: 35px;
+  padding: 5px 0;
+  text-align: center;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #999999));
+  background-image: -webkit-linear-gradient(#cccccc, #999999);
+  background-image: -moz-linear-gradient(#cccccc, #999999);
+  background-image: -o-linear-gradient(#cccccc, #999999);
+  background-image: linear-gradient(#cccccc, #999999);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #666;
+  font-size: 18px;
+}
+/* line 136, ../sass/style.scss */
+.container .board_area ul li p:first-child {
+  border-left: 1px solid #666;
+}
+/* line 141, ../sass/style.scss */
+.container .board_area ul li .head {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #000000));
+  background-image: -webkit-linear-gradient(#666666, #000000);
+  background-image: -moz-linear-gradient(#666666, #000000);
+  background-image: -o-linear-gradient(#666666, #000000);
+  background-image: linear-gradient(#666666, #000000);
+  color: #ccc;
+}
+/* line 146, ../sass/style.scss */
+.container .board_area ul li .selected {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffb400), color-stop(100%, #9e7000));
+  background-image: -webkit-linear-gradient(#ffb400, #9e7000);
+  background-image: -moz-linear-gradient(#ffb400, #9e7000);
+  background-image: -o-linear-gradient(#ffb400, #9e7000);
+  background-image: linear-gradient(#ffb400, #9e7000);
+}

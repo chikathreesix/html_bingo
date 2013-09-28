@@ -1,0 +1,58 @@
+/*
+Syntax error: File to import not found or unreadable: compass/reset.
+              Load paths:
+                /Users/RYO/Documents/proj/github/html_bingo
+                /Users/RYO/Documents/proj/github/html_bingo/sass
+        on line 6 of sass/style.scss
+
+1: /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/reset";
+7: @import "compass/css3";
+8: @import "compass/utilities/general/clearfix";
+9: @import "compass/css3/user-interface";
+10: 
+11: body{
+
+Backtrace:
+sass/style.scss:6
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/import_node.rb:45:in `import'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/import_node.rb:28:in `imported_file'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/import_node.rb:37:in `css_import?'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/tree/root_node.rb:20:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `each'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/opt/local/lib/ruby1.9/gems/1.9.1/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/reset.\A               Load paths:\A                 /Users/RYO/Documents/proj/github/html_bingo\A                 /Users/RYO/Documents/proj/github/html_bingo/sass\A         on line 6 of sass/style.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: @import \"compass/css3\";\A 8: @import \"compass/utilities/general/clearfix\";\A 9: @import \"compass/css3/user-interface\";\A 10: \A 11: body{"; }
