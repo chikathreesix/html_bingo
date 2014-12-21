@@ -42,6 +42,7 @@ $(function(){
       if(cymbal == null){
         return;
       }
+      cymbal.currentTime = 0;
       cymbal.play();
     }
   }
